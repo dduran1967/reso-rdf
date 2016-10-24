@@ -1,0 +1,19 @@
+{
+  "MemberKey":               "MemberKey",
+  "MemberType":              "Agent",
+  "MemberFirstName":         "Dave",
+  "MemberLastName":          "Duran",
+  "JobTitle":                "Founder/CEO",
+  "MemberAddress1":          "55 Gypsy Ln",
+  "MemberCity":              "Berkeley",
+  "MemberCountry":           "USA",
+  "MemberCountyOrParish":    "Alameda",
+  "MemberStateOrProvince":   "CA",
+  "MemberPostalCode":        "94705",
+  "MemberMobilePhone":       "+14084828947",
+  "MemberEmail":             "dave@yodata.io",
+  "SocialMediaWebsiteUrl":   "http://linkedin.com/in/daveduran",
+  "MemberStateLicense":      "12345",
+  "MemberStateLicenseState": "CA",
+  "OfficeKey":               "http://rewebsite.com/offices/bigtown"
+}

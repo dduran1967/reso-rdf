@@ -1,0 +1,66 @@
+{
+  "@context":                  {
+    "schema":                    "http://schema.org/",
+    "OfficeAddress1":            "schema:streetAddress",
+    "OfficeAddress2":            "schema:streetAddress",
+    "OfficeCity":                "schema:",
+    "OfficeCountyOrParish":      "OfficeCountyOrParish",
+    "OfficeStateOrProvince":     "schema:addressRegion",
+    "OfficePhone":               "schema:telephone",
+    "OfficePhoneExt":            "schema:telephone",
+    "OfficePostalCode":          "schema:postalCode",
+    "OfficePostalCodePlus4":     "OfficePostalCodePlus4",
+    "OfficeEmail":               "OfficeEmail",
+    "OfficeFax":                 "OfficeFax",
+    "OfficeAssociationComments": "OfficeAssociationComments",
+    "OfficeBrokerKey":           "OfficeBrokerKey",
+    "OfficeKey":                 "OfficeKey",
+    "OfficeManagerKey":          "OfficeManagerKey",
+    "OfficeMlsId":               "OfficeMlsId",
+    "OfficeStatus":              {
+      "@id":   "OfficeStatus",
+      "@type": "https://yodata.io/reso/enum#OfficeStatus"
+    },
+    "OfficeType":                {
+      "@id":   "OfficeType",
+      "@type": "https://yodata.io/reso/enum#OfficeType"
+    },
+    "schema:memberOf":           "FranchiseAffiliation",
+    "SocialMediaType":           "SocialMediaType",
+    "SocialMedia":               "SocialMedia"
+  },
+  "OfficeAddress1":            "address",
+  "OfficeAddress2":            "address",
+  "OfficeCity":                "addressLocality",
+  "OfficeCountyOrParish":      "OfficeCountyOrParish",
+  "OfficeStateOrProvince":     "schema:addressRegion",
+  "OfficePhone":               "schema:telephone",
+  "OfficePhoneExt":            "schema:telephone",
+  "OfficePostalCode":          "schema:postalCode",
+  "OfficePostalCodePlus4":     "OfficePostalCodePlus4",
+  "OfficeEmail":               "OfficeEmail",
+  "OfficeFax":                 "OfficeFax",
+  "OfficeAssociationComments": "OfficeAssociationComments",
+  "OfficeBrokerKey":           "OfficeBrokerKey",
+  "OfficeKey":                 "OfficeKey",
+  "OfficeManagerKey":          "OfficeManagerKey",
+  "OfficeMlsId":               "OfficeMlsId",
+  "OfficeStatus":              {
+    "@id":   "OfficeStatus",
+    "@type": "https://yodata.io/reso/enum#OfficeStatus"
+  },
+  "OfficeType":                {
+    "@id":   "OfficeType",
+    "@type": "https://yodata.io/reso/enum#OfficeType"
+  },
+  "schema:memberOf":           "FranchiseAffiliation",
+  "SocialMediaType":           "SocialMediaType",
+  "SocialMedia":               "SocialMedia",
+  "@frame": {
+    "@type": "Organization",
+    "name": "OfficeName",
+    "adddress": {
+      "postalAddress": ["OfficeName","officeType"]
+    }
+  }
+}

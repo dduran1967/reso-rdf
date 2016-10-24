@@ -1,0 +1,29 @@
+{
+  "@context":              {
+    "schema":                "http://schema.org/",
+    "OpenHouseStartTime":    "schema:startDate",
+    "OpenHouseEndTime":      "schema:endDate",
+    "OpenHouseRemarks":      "schema:description",
+    "OpenHouseStatus":       "schema:eventStatus",
+    "ShowingAgentFirstName": "schema:givenName",
+    "ShowingAgentLastName":  "schema:familyName",
+    "ShowingAgentKey":       {
+      "@id":   "schema:performer",
+      "@type": "@id"
+    },
+    "ListingKey":            {
+      "id":    "schema:offers",
+      "@type": "@id"
+    }
+  },
+  "OpenHouseStartTime":    "schema:startDate",
+  "OpenHouseEndTime":      "schema:endDate",
+  "OpenHouseRemarks":      "schema:description",
+  "OpenHouseStatus":       "schema:eventStatus",
+  "ShowingAgentFirstName": "schema:givenName",
+  "ShowingAgentKey":       "ShowingAgentKey",
+  "ShowingAgentLastName":  "ShowingAgentLastName",
+  "ListingKey":            "ListingKey",
+  "OpenHouseId":           "adfafsdasd"
+}
+

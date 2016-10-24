@@ -1,0 +1,27 @@
+{
+  "name": "reso-rdf",
+  "version": "0.0.1",
+  "dependencies": {
+    "rdflib": "^0.12.1"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-xml2json": "^0.1.5",
+    "lodash": "^4.16.4",
+    "xml2js": "^0.4.17"
+  },
+  "description": "a library for working with RESO data dictionary data in RDF",
+  "main": "gulpfile-compiled.js",
+  "directories": {
+    "example": "examples"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "reso"
+  ],
+  "author": "dave@yodata.io",
+  "license": "MIT"
+}

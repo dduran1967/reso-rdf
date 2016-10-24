@@ -1,0 +1,34 @@
+<component name="libraryTable">
+  <library name="Generated files" type="javaScript">
+    <properties>
+      <sourceFilesUrls>
+        <item url="file://$PROJECT_DIR$/src/xmlToJson-compiled.js" />
+        <item url="file://$PROJECT_DIR$/gulpfile-compiled.js" />
+        <item url="file://$PROJECT_DIR$/src/reso-parse-dd-compiled.js" />
+      </sourceFilesUrls>
+    </properties>
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/src/importResoDD-compiled.js" />
+      <root url="file://$PROJECT_DIR$/src/importResoDD-compiled.js" />
+      <root url="file://$PROJECT_DIR$/dist/importResoDD-compiled.js" />
+      <root url="file://$PROJECT_DIR$/dist/importResoDD-compiled.js" />
+      <root url="file://$PROJECT_DIR$/src/resoContacts16-compiled.js" />
+      <root url="file://$PROJECT_DIR$/src/resoContacts16-compiled.js" />
+      <root url="file://$PROJECT_DIR$/src/resoHistoryTransactional16-compiled.js" />
+      <root url="file://$PROJECT_DIR$/dist/resoContacts15-compiled.js" />
+      <root url="file://$PROJECT_DIR$/src/resoHistoryTransactional16-compiled.js" />
+      <root url="file://$PROJECT_DIR$/lib/importResoProperties-compiled.js" />
+      <root url="file://$PROJECT_DIR$/app-compiled.js" />
+      <root url="file://$PROJECT_DIR$/src/resoContacts15-compiled.js" />
+      <root url="file://$PROJECT_DIR$/src/resoOffice16-compiled.js" />
+      <root url="file://$PROJECT_DIR$/lib/importResoProperties-compiled.js" />
+      <root url="file://$PROJECT_DIR$/app-compiled.js" />
+      <root url="file://$PROJECT_DIR$/src/resoContacts15-compiled.js" />
+      <root url="file://$PROJECT_DIR$/src/resoOffice16-compiled.js" />
+      <root url="file://$PROJECT_DIR$/src/xmlToJson-compiled.js" />
+      <root url="file://$PROJECT_DIR$/gulpfile-compiled.js" />
+      <root url="file://$PROJECT_DIR$/src/reso-parse-dd-compiled.js" />
+    </CLASSES>
+    <SOURCES />
+  </library>
+</component>

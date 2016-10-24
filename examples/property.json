@@ -1,0 +1,1458 @@
+{
+ "@context": {
+  "AboveGradeFinishedArea": {
+   "@id": "AboveGradeFinishedArea",
+   "@type": "http://www.w3.org/2001/XMLSchema#decimal"
+  },
+  "AboveGradeFinishedAreaSource": {
+   "@id": "AboveGradeFinishedAreaSource",
+   "@type": "https://yodata.io/reso/enum#AreaSource"
+  },
+  "AboveGradeFinishedAreaUnits": {
+   "@id": "AboveGradeFinishedAreaUnits",
+   "@type": "https://yodata.io/reso/enum#AreaUnits"
+  },
+  "AccessCode": "AccessCode",
+  "AccessibilityFeatures": "AccessibilityFeatures",
+  "AdditionalParcelsDescription": "AdditionalParcelsDescription",
+  "AdditionalParcelsYN": {
+   "@id": "AdditionalParcelsYN",
+   "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+  },
+  "AnchorsCoTenants": "AnchorsCoTenants",
+  "Appliances": "Appliances",
+  "ApprovalStatus": "ApprovalStatus",
+  "ArchitecturalStyle": "ArchitecturalStyle",
+  "AssociationAmenities": "AssociationAmenities",
+  "AssociationFee": {
+   "@id": "AssociationFee",
+   "@type": "http://www.w3.org/2001/XMLSchema#decimal"
+  },
+  "AssociationFee2": {
+   "@id": "AssociationFee2",
+   "@type": "http://www.w3.org/2001/XMLSchema#decimal"
+  },
+  "AssociationFee2Frequency": {
+   "@id": "AssociationFee2Frequency",
+   "@type": "https://yodata.io/reso/enum#FeeFrequency"
+  },
+  "AssociationFeeFrequency": {
+   "@id": "AssociationFeeFrequency",
+   "@type": "https://yodata.io/reso/enum#FeeFrequency"
+  },
+  "AssociationFeeIncludes": {
+   "@id": "AssociationFeeIncludes",
+   "@type": "https://yodata.io/reso/enum#AssociationFeeIncludes"
+  },
+  "AssociationName": "AssociationName",
+  "AssociationName2": "AssociationName2",
+  "AssociationPhone": "AssociationPhone",
+  "AssociationPhone2": "AssociationPhone2",
+  "AssociationYN": {
+   "@id": "AssociationYN",
+   "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+  },
+  "AttachedGarageYN": {
+   "@id": "AttachedGarageYN",
+   "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+  },
+  "AvailabilityDate": {
+   "@id": "AvailabilityDate",
+   "@type": "http://www.w3.org/2001/XMLSchema#date"
+  },
+  "Basement": "Basement",
+  "BathroomsFull": {
+   "@id": "BathroomsFull",
+   "@type": "http://www.w3.org/2001/XMLSchema#decimal"
+  },
+  "BathroomsHalf": {
+   "@id": "BathroomsHalf",
+   "@type": "http://www.w3.org/2001/XMLSchema#decimal"
+  },
+  "BathroomsOneQuarter": {
+   "@id": "BathroomsOneQuarter",
+   "@type": "http://www.w3.org/2001/XMLSchema#decimal"
+  },
+  "BathroomsPartial": {
+   "@id": "BathroomsPartial",
+   "@type": "http://www.w3.org/2001/XMLSchema#decimal"
+  },
+  "BathroomsThreeQuarter": {
+   "@id": "BathroomsThreeQuarter",
+   "@type": "http://www.w3.org/2001/XMLSchema#decimal"
+  },
+  "BathroomsTotalInteger": {
+   "@id": "BathroomsTotalInteger",
+   "@type": "http://www.w3.org/2001/XMLSchema#decimal"
+  },
+  "BedroomsPossible": {
+   "@id": "BedroomsPossible",
+   "@type": "http://www.w3.org/2001/XMLSchema#decimal"
+  },
+  "BedroomsTotal": {
+   "@id": "BedroomsTotal",
+   "@type": "http://www.w3.org/2001/XMLSchema#decimal"
+  },
+  "BelowGradeFinishedArea": {
+   "@id": "BelowGradeFinishedArea",
+   "@type": "http://www.w3.org/2001/XMLSchema#decimal"
+  },
+  "BelowGradeFinishedAreaSource": {
+   "@id": "BelowGradeFinishedAreaSource",
+   "@type": "https://yodata.io/reso/enum#AreaSource"
+  },
+  "BelowGradeFinishedAreaUnits": {
+   "@id": "BelowGradeFinishedAreaUnits",
+   "@type": "https://yodata.io/reso/enum#AreaUnits"
+  },
+  "BodyType": {
+   "@id": "BodyType",
+   "@type": "https://yodata.io/reso/enum#BodyType"
+  },
+  "BuilderModel": "BuilderModel",
+  "BuilderName": "BuilderName",
+  "BuildingAreaSource": {
+   "@id": "BuildingAreaSource",
+   "@type": "https://yodata.io/reso/enum#AreaSource"
+  },
+  "BuildingAreaTotal": {
+   "@id": "BuildingAreaTotal",
+   "@type": "http://www.w3.org/2001/XMLSchema#decimal"
+  },
+  "BuildingAreaUnits": {
+   "@id": "BuildingAreaUnits",
+   "@type": "https://yodata.io/reso/enum#AreaUnits"
+  },
+  "BuildingFeatures": "BuildingFeatures",
+  "BuildingName": "BuildingName",
+  "BusinessName": "BusinessName",
+  "BusinessType": {
+   "@id": "BusinessType",
+   "@type": "https://yodata.io/reso/enum#BusinessType"
+  },
+  "BuyerAgencyCompensation": "BuyerAgencyCompensation",
+  "BuyerAgencyCompensationType": {
+   "@id": "BuyerAgencyCompensationType",
+   "@type": "https://yodata.io/reso/enum#CompensationType"
+  },
+  "BuyerAgentAOR": "BuyerAgentAOR",
+  "BuyerAgentCellPhone": "BuyerAgentCellPhone",
+  "BuyerAgentDesignation": "BuyerAgentDesignation",
+  "BuyerAgentDirectPhone": "BuyerAgentDirectPhone",
+  "BuyerAgentEmail": "BuyerAgentEmail",
+  "BuyerAgentFax": "BuyerAgentFax",
+  "BuyerAgentFirstName": "BuyerAgentFirstName",
+  "BuyerAgentFullName": "BuyerAgentFullName",
+  "BuyerAgentHomePhone": "BuyerAgentHomePhone",
+  "BuyerAgentKey": "BuyerAgentKey",
+  "BuyerAgentKeyNumeric": {
+   "@id": "BuyerAgentKeyNumeric",
+   "@type": "http://www.w3.org/2001/XMLSchema#decimal"
+  },
+  "BuyerAgentLastName": "BuyerAgentLastName",
+  "BuyerAgentMiddleName": "BuyerAgentMiddleName",
+  "BuyerAgentMlsId": "BuyerAgentMlsId",
+  "BuyerAgentNamePrefix": "BuyerAgentNamePrefix",
+  "BuyerAgentNameSuffix": "BuyerAgentNameSuffix",
+  "BuyerAgentOfficePhone": "BuyerAgentOfficePhone",
+  "BuyerAgentOfficePhoneExt": "BuyerAgentOfficePhoneExt",
+  "BuyerAgentPager": "BuyerAgentPager",
+  "BuyerAgentPreferredPhone": "BuyerAgentPreferredPhone",
+  "BuyerAgentPreferredPhoneExt": "BuyerAgentPreferredPhoneExt",
+  "BuyerAgentStateLicense": "BuyerAgentStateLicense",
+  "BuyerAgentTollFreePhone": "BuyerAgentTollFreePhone",
+  "BuyerAgentURL": "BuyerAgentURL",
+  "BuyerAgentVoiceMail": "BuyerAgentVoiceMail",
+  "BuyerAgentVoiceMailExt": "BuyerAgentVoiceMailExt",
+  "BuyerFinancing": {
+   "@id": "BuyerFinancing",
+   "@type": "https://yodata.io/reso/enum#BuyerFinancing"
+  },
+  "BuyerOfficeAOR": "BuyerOfficeAOR",
+  "BuyerOfficeEmail": "BuyerOfficeEmail",
+  "BuyerOfficeFax": "BuyerOfficeFax",
+  "BuyerOfficeKey": "BuyerOfficeKey",
+  "BuyerOfficeKeyNumeric": {
+   "@id": "BuyerOfficeKeyNumeric",
+   "@type": "http://www.w3.org/2001/XMLSchema#decimal"
+  },
+  "BuyerOfficeMlsId": "BuyerOfficeMlsId",
+  "BuyerOfficeName": "BuyerOfficeName",
+  "BuyerOfficePhone": "BuyerOfficePhone",
+  "BuyerOfficePhoneExt": "BuyerOfficePhoneExt",
+  "BuyerOfficeURL": "BuyerOfficeURL",
+  "BuyerTeamKey": "BuyerTeamKey",
+  "BuyerTeamKeyNumeric": {
+   "@id": "BuyerTeamKeyNumeric",
+   "@type": "http://www.w3.org/2001/XMLSchema#decimal"
+  },
+  "BuyerTeamName": "BuyerTeamName",
+  "CableTvExpense": {
+   "@id": "CableTvExpense",
+   "@type": "http://www.w3.org/2001/XMLSchema#decimal"
+  },
+  "CancelationDate": {
+   "@id": "CancelationDate",
+   "@type": "http://www.w3.org/2001/XMLSchema#date"
+  },
+  "CapRate": {
+   "@id": "CapRate",
+   "@type": "http://www.w3.org/2001/XMLSchema#decimal"
+  },
+  "CarportSpaces": {
+   "@id": "CarportSpaces",
+   "@type": "http://www.w3.org/2001/XMLSchema#decimal"
+  },
+  "CarportYN": {
+   "@id": "CarportYN",
+   "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+  },
+  "CarrierRoute": "CarrierRoute",
+  "City": "City",
+  "CityRegion": "CityRegion",
+  "CloseDate": {
+   "@id": "CloseDate",
+   "@type": "http://www.w3.org/2001/XMLSchema#date"
+  },
+  "ClosePrice": {
+   "@id": "ClosePrice",
+   "@type": "http://www.w3.org/2001/XMLSchema#decimal"
+  },
+  "CoBuyerAgentAOR": "CoBuyerAgentAOR",
+  "CoBuyerAgentCellPhone": "CoBuyerAgentCellPhone",
+  "CoBuyerAgentDesignation": "CoBuyerAgentDesignation",
+  "CoBuyerAgentDirectPhone": "CoBuyerAgentDirectPhone",
+  "CoBuyerAgentEmail": "CoBuyerAgentEmail",
+  "CoBuyerAgentFax": "CoBuyerAgentFax",
+  "CoBuyerAgentFirstName": "CoBuyerAgentFirstName",
+  "CoBuyerAgentFullName": "CoBuyerAgentFullName",
+  "CoBuyerAgentHomePhone": "CoBuyerAgentHomePhone",
+  "CoBuyerAgentKey": "CoBuyerAgentKey",
+  "CoBuyerAgentKeyNumeric": {
+   "@id": "CoBuyerAgentKeyNumeric",
+   "@type": "http://www.w3.org/2001/XMLSchema#decimal"
+  },
+  "CoBuyerAgentLastName": "CoBuyerAgentLastName",
+  "CoBuyerAgentMiddleName": "CoBuyerAgentMiddleName",
+  "CoBuyerAgentMlsId": "CoBuyerAgentMlsId",
+  "CoBuyerAgentNamePrefix": "CoBuyerAgentNamePrefix",
+  "CoBuyerAgentNameSuffix": "CoBuyerAgentNameSuffix",
+  "CoBuyerAgentOfficePhone": "CoBuyerAgentOfficePhone",
+  "CoBuyerAgentOfficePhoneExt": "CoBuyerAgentOfficePhoneExt",
+  "CoBuyerAgentPager": "CoBuyerAgentPager",
+  "CoBuyerAgentPreferredPhone": "CoBuyerAgentPreferredPhone",
+  "CoBuyerAgentPreferredPhoneExt": "CoBuyerAgentPreferredPhoneExt",
+  "CoBuyerAgentStateLicense": "CoBuyerAgentStateLicense",
+  "CoBuyerAgentTollFreePhone": "CoBuyerAgentTollFreePhone",
+  "CoBuyerAgentURL": "CoBuyerAgentURL",
+  "CoBuyerAgentVoiceMail": "CoBuyerAgentVoiceMail",
+  "CoBuyerAgentVoiceMailExt": "CoBuyerAgentVoiceMailExt",
+  "CoBuyerOfficeAOR": "CoBuyerOfficeAOR",
+  "CoBuyerOfficeEmail": "CoBuyerOfficeEmail",
+  "CoBuyerOfficeFax": "CoBuyerOfficeFax",
+  "CoBuyerOfficeKey": "CoBuyerOfficeKey",
+  "CoBuyerOfficeKeyNumeric": {
+   "@id": "CoBuyerOfficeKeyNumeric",
+   "@type": "http://www.w3.org/2001/XMLSchema#decimal"
+  },
+  "CoBuyerOfficeMlsId": "CoBuyerOfficeMlsId",
+  "CoBuyerOfficeName": "CoBuyerOfficeName",
+  "CoBuyerOfficePhone": "CoBuyerOfficePhone",
+  "CoBuyerOfficePhoneExt": "CoBuyerOfficePhoneExt",
+  "CoBuyerOfficeURL": "CoBuyerOfficeURL",
+  "CoListAgentAOR": "CoListAgentAOR",
+  "CoListAgentCellPhone": "CoListAgentCellPhone",
+  "CoListAgentDesignation": "CoListAgentDesignation",
+  "CoListAgentDirectPhone": "CoListAgentDirectPhone",
+  "CoListAgentEmail": "CoListAgentEmail",
+  "CoListAgentFax": "CoListAgentFax",
+  "CoListAgentFirstName": "CoListAgentFirstName",
+  "CoListAgentFullName": "CoListAgentFullName",
+  "CoListAgentHomePhone": "CoListAgentHomePhone",
+  "CoListAgentKey": "CoListAgentKey",
+  "CoListAgentKeyNumeric": {
+   "@id": "CoListAgentKeyNumeric",
+   "@type": "http://www.w3.org/2001/XMLSchema#decimal"
+  },
+  "CoListAgentLastName": "CoListAgentLastName",
+  "CoListAgentMiddleName": "CoListAgentMiddleName",
+  "CoListAgentMlsId": "CoListAgentMlsId",
+  "CoListAgentNamePrefix": "CoListAgentNamePrefix",
+  "CoListAgentNameSuffix": "CoListAgentNameSuffix",
+  "CoListAgentOfficePhone": "CoListAgentOfficePhone",
+  "CoListAgentOfficePhoneExt": "CoListAgentOfficePhoneExt",
+  "CoListAgentPager": "CoListAgentPager",
+  "CoListAgentPreferredPhone": "CoListAgentPreferredPhone",
+  "CoListAgentPreferredPhoneExt": "CoListAgentPreferredPhoneExt",
+  "CoListAgentStateLicense": "CoListAgentStateLicense",
+  "CoListAgentTollFreePhone": "CoListAgentTollFreePhone",
+  "CoListAgentURL": "CoListAgentURL",
+  "CoListAgentVoiceMail": "CoListAgentVoiceMail",
+  "CoListAgentVoiceMailExt": "CoListAgentVoiceMailExt",
+  "CoListOfficeAOR": "CoListOfficeAOR",
+  "CoListOfficeEmail": "CoListOfficeEmail",
+  "CoListOfficeFax": "CoListOfficeFax",
+  "CoListOfficeKey": "CoListOfficeKey",
+  "CoListOfficeKeyNumeric": {
+   "@id": "CoListOfficeKeyNumeric",
+   "@type": "http://www.w3.org/2001/XMLSchema#decimal"
+  },
+  "CoListOfficeMlsId": "CoListOfficeMlsId",
+  "CoListOfficeName": "CoListOfficeName",
+  "CoListOfficePhone": "CoListOfficePhone",
+  "CoListOfficePhoneExt": "CoListOfficePhoneExt",
+  "CoListOfficeURL": "CoListOfficeURL",
+  "CommonWalls": {
+   "@id": "CommonWalls",
+   "@type": "https://yodata.io/reso/enum#CommonWalls"
+  },
+  "CommunityFeatures": "CommunityFeatures",
+  "Concessions": {
+   "@id": "Concessions",
+   "@type": "https://yodata.io/reso/enum#Concessions"
+  },
+  "ConcessionsAmount": {
+   "@id": "ConcessionsAmount",
+   "@type": "http://www.w3.org/2001/XMLSchema#decimal"
+  },
+  "ConcessionsComments": "ConcessionsComments",
+  "ConstructionMaterials": {
+   "@id": "ConstructionMaterials",
+   "@type": "https://yodata.io/reso/enum#ConstructionMaterials"
+  },
+  "ContinentRegion": "ContinentRegion",
+  "Contingency": "Contingency",
+  "ContingentDate": {
+   "@id": "ContingentDate",
+   "@type": "http://www.w3.org/2001/XMLSchema#date"
+  },
+  "ContractStatusChangeDate": {
+   "@id": "ContractStatusChangeDate",
+   "@type": "http://www.w3.org/2001/XMLSchema#date"
+  },
+  "Cooling": "Cooling",
+  "CoolingYN": {
+   "@id": "CoolingYN",
+   "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+  },
+  "CopyrightNotice": "CopyrightNotice",
+  "Country": {
+   "@id": "Country",
+   "@type": "https://yodata.io/reso/enum#Country"
+  },
+  "CountryRegion": "CountryRegion",
+  "CountyOrParish": "CountyOrParish",
+  "CoveredSpaces": {
+   "@id": "CoveredSpaces",
+   "@type": "http://www.w3.org/2001/XMLSchema#decimal"
+  },
+  "CropsIncludedYN": {
+   "@id": "CropsIncludedYN",
+   "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+  },
+  "CrossStreet": "CrossStreet",
+  "CultivatedArea": {
+   "@id": "CultivatedArea",
+   "@type": "http://www.w3.org/2001/XMLSchema#decimal"
+  },
+  "CumulativeDaysOnMarket": {
+   "@id": "CumulativeDaysOnMarket",
+   "@type": "http://www.w3.org/2001/XMLSchema#decimal"
+  },
+  "CurrentFinancing": {
+   "@id": "CurrentFinancing",
+   "@type": "https://yodata.io/reso/enum#CurrentFinancing"
+  },
+  "CurrentUse": "CurrentUse",
+  "DOH1": "DOH1",
+  "DOH2": "DOH2",
+  "DOH3": "DOH3",
+  "DaysOnMarket": {
+   "@id": "DaysOnMarket",
+   "@type": "http://www.w3.org/2001/XMLSchema#decimal"
+  },
+  "DevelopmentStatus": "DevelopmentStatus",
+  "DirectionFaces": {
+   "@id": "DirectionFaces",
+   "@type": "https://yodata.io/reso/enum#DirectionFaces"
+  },
+  "Directions": "Directions",
+  "Disclaimer": "Disclaimer",
+  "Disclosures": "Disclosures",
+  "DistanceToBusComments": "DistanceToBusComments",
+  "DistanceToBusNumeric": {
+   "@id": "DistanceToBusNumeric",
+   "@type": "http://www.w3.org/2001/XMLSchema#decimal"
+  },
+  "DistanceToBusUnits": {
+   "@id": "DistanceToBusUnits",
+   "@type": "https://yodata.io/reso/enum#LinearUnits"
+  },
+  "DistanceToElectricComments": "DistanceToElectricComments",
+  "DistanceToElectricNumeric": {
+   "@id": "DistanceToElectricNumeric",
+   "@type": "http://www.w3.org/2001/XMLSchema#decimal"
+  },
+  "DistanceToElectricUnits": {
+   "@id": "DistanceToElectricUnits",
+   "@type": "https://yodata.io/reso/enum#LinearUnits"
+  },
+  "DistanceToFreewayComments": "DistanceToFreewayComments",
+  "DistanceToFreewayNumeric": {
+   "@id": "DistanceToFreewayNumeric",
+   "@type": "http://www.w3.org/2001/XMLSchema#decimal"
+  },
+  "DistanceToFreewayUnits": {
+   "@id": "DistanceToFreewayUnits",
+   "@type": "https://yodata.io/reso/enum#LinearUnits"
+  },
+  "DistanceToGasComments": "DistanceToGasComments",
+  "DistanceToGasNumeric": {
+   "@id": "DistanceToGasNumeric",
+   "@type": "http://www.w3.org/2001/XMLSchema#decimal"
+  },
+  "DistanceToGasUnits": {
+   "@id": "DistanceToGasUnits",
+   "@type": "https://yodata.io/reso/enum#LinearUnits"
+  },
+  "DistanceToPhoneServiceComments": "DistanceToPhoneServiceComments",
+  "DistanceToPhoneServiceNumeric": {
+   "@id": "DistanceToPhoneServiceNumeric",
+   "@type": "http://www.w3.org/2001/XMLSchema#decimal"
+  },
+  "DistanceToPhoneServiceUnits": {
+   "@id": "DistanceToPhoneServiceUnits",
+   "@type": "https://yodata.io/reso/enum#LinearUnits"
+  },
+  "DistanceToPlaceofWorshipComments": "DistanceToPlaceofWorshipComments",
+  "DistanceToPlaceofWorshipNumeric": {
+   "@id": "DistanceToPlaceofWorshipNumeric",
+   "@type": "http://www.w3.org/2001/XMLSchema#decimal"
+  },
+  "DistanceToPlaceofWorshipUnits": {
+   "@id": "DistanceToPlaceofWorshipUnits",
+   "@type": "https://yodata.io/reso/enum#LinearUnits"
+  },
+  "DistanceToSchoolBusComments": "DistanceToSchoolBusComments",
+  "DistanceToSchoolBusNumeric": {
+   "@id": "DistanceToSchoolBusNumeric",
+   "@type": "http://www.w3.org/2001/XMLSchema#decimal"
+  },
+  "DistanceToSchoolBusUnits": {
+   "@id": "DistanceToSchoolBusUnits",
+   "@type": "https://yodata.io/reso/enum#LinearUnits"
+  },
+  "DistanceToSchoolsComments": "DistanceToSchoolsComments",
+  "DistanceToSchoolsNumeric": {
+   "@id": "DistanceToSchoolsNumeric",
+   "@type": "http://www.w3.org/2001/XMLSchema#decimal"
+  },
+  "DistanceToSchoolsUnits": {
+   "@id": "DistanceToSchoolsUnits",
+   "@type": "https://yodata.io/reso/enum#LinearUnits"
+  },
+  "DistanceToSewerComments": "DistanceToSewerComments",
+  "DistanceToSewerNumeric": {
+   "@id": "DistanceToSewerNumeric",
+   "@type": "http://www.w3.org/2001/XMLSchema#decimal"
+  },
+  "DistanceToSewerUnits": {
+   "@id": "DistanceToSewerUnits",
+   "@type": "https://yodata.io/reso/enum#LinearUnits"
+  },
+  "DistanceToShoppingComments": "DistanceToShoppingComments",
+  "DistanceToShoppingNumeric": {
+   "@id": "DistanceToShoppingNumeric",
+   "@type": "http://www.w3.org/2001/XMLSchema#decimal"
+  },
+  "DistanceToShoppingUnits": {
+   "@id": "DistanceToShoppingUnits",
+   "@type": "https://yodata.io/reso/enum#LinearUnits"
+  },
+  "DistanceToStreetComments": "DistanceToStreetComments",
+  "DistanceToStreetNumeric": {
+   "@id": "DistanceToStreetNumeric",
+   "@type": "http://www.w3.org/2001/XMLSchema#decimal"
+  },
+  "DistanceToStreetUnits": {
+   "@id": "DistanceToStreetUnits",
+   "@type": "https://yodata.io/reso/enum#LinearUnits"
+  },
+  "DistanceToWaterComments": "DistanceToWaterComments",
+  "DistanceToWaterNumeric": {
+   "@id": "DistanceToWaterNumeric",
+   "@type": "http://www.w3.org/2001/XMLSchema#decimal"
+  },
+  "DistanceToWaterUnits": {
+   "@id": "DistanceToWaterUnits",
+   "@type": "https://yodata.io/reso/enum#LinearUnits"
+  },
+  "DocumentsAvailable": "DocumentsAvailable",
+  "DocumentsChangeTimestamp": {
+   "@id": "DocumentsChangeTimestamp",
+   "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+  },
+  "DocumentsCount": {
+   "@id": "DocumentsCount",
+   "@type": "http://www.w3.org/2001/XMLSchema#decimal"
+  },
+  "DoorFeatures": "DoorFeatures",
+  "DualVariableCompensationYN": {
+   "@id": "DualVariableCompensationYN",
+   "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+  },
+  "Electric": {
+   "@id": "Electric",
+   "@type": "https://yodata.io/reso/enum#Electric"
+  },
+  "ElectricExpense": {
+   "@id": "ElectricExpense",
+   "@type": "http://www.w3.org/2001/XMLSchema#decimal"
+  },
+  "ElectricOnPropertyYN": {
+   "@id": "ElectricOnPropertyYN",
+   "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+  },
+  "ElementarySchool": "ElementarySchool",
+  "ElementarySchoolDistrict": "ElementarySchoolDistrict",
+  "Elevation": {
+   "@id": "Elevation",
+   "@type": "http://www.w3.org/2001/XMLSchema#decimal"
+  },
+  "ElevationUnits": {
+   "@id": "ElevationUnits",
+   "@type": "https://yodata.io/reso/enum#LinearUnits"
+  },
+  "EntryLevel": {
+   "@id": "EntryLevel",
+   "@type": "http://www.w3.org/2001/XMLSchema#decimal"
+  },
+  "EntryLocation": "EntryLocation",
+  "Exclusions": "Exclusions",
+  "ExistingLeaseType": {
+   "@id": "ExistingLeaseType",
+   "@type": "https://yodata.io/reso/enum#ExistingLeaseType"
+  },
+  "ExpirationDate": {
+   "@id": "ExpirationDate",
+   "@type": "http://www.w3.org/2001/XMLSchema#date"
+  },
+  "ExteriorFeatures": "ExteriorFeatures",
+  "FarmCreditServiceInclYN": {
+   "@id": "FarmCreditServiceInclYN",
+   "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+  },
+  "FarmLandAreaSource": {
+   "@id": "FarmLandAreaSource",
+   "@type": "https://yodata.io/reso/enum#AreaSource"
+  },
+  "FarmLandAreaUnits": {
+   "@id": "FarmLandAreaUnits",
+   "@type": "https://yodata.io/reso/enum#AreaUnits"
+  },
+  "Fencing": "Fencing",
+  "FinancialDataSource": {
+   "@id": "FinancialDataSource",
+   "@type": "https://yodata.io/reso/enum#FinancialDataSource"
+  },
+  "FireplaceFeatures": "FireplaceFeatures",
+  "FireplaceYN": {
+   "@id": "FireplaceYN",
+   "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+  },
+  "FireplacesTotal": {
+   "@id": "FireplacesTotal",
+   "@type": "http://www.w3.org/2001/XMLSchema#decimal"
+  },
+  "Flooring": "Flooring",
+  "FoundationArea": {
+   "@id": "FoundationArea",
+   "@type": "http://www.w3.org/2001/XMLSchema#decimal"
+  },
+  "FoundationDetails": {
+   "@id": "FoundationDetails",
+   "@type": "https://yodata.io/reso/enum#FoundationDetails"
+  },
+  "FrontageLength": "FrontageLength",
+  "FrontageType": "FrontageType",
+  "FuelExpense": {
+   "@id": "FuelExpense",
+   "@type": "http://www.w3.org/2001/XMLSchema#decimal"
+  },
+  "Furnished": {
+   "@id": "Furnished",
+   "@type": "https://yodata.io/reso/enum#Furnished"
+  },
+  "FurnitureReplacementExpense": {
+   "@id": "FurnitureReplacementExpense",
+   "@type": "http://www.w3.org/2001/XMLSchema#decimal"
+  },
+  "GarageSpaces": {
+   "@id": "GarageSpaces",
+   "@type": "http://www.w3.org/2001/XMLSchema#decimal"
+  },
+  "GarageYN": {
+   "@id": "GarageYN",
+   "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+  },
+  "GardnerExpense": {
+   "@id": "GardnerExpense",
+   "@type": "http://www.w3.org/2001/XMLSchema#decimal"
+  },
+  "Gas": "Gas",
+  "GrazingPermitsBlmYN": {
+   "@id": "GrazingPermitsBlmYN",
+   "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+  },
+  "GrazingPermitsForestServiceYN": {
+   "@id": "GrazingPermitsForestServiceYN",
+   "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+  },
+  "GrazingPermitsPrivateYN": {
+   "@id": "GrazingPermitsPrivateYN",
+   "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+  },
+  "GreenBuildingVerificationType": {
+   "@id": "GreenBuildingVerificationType",
+   "@type": "https://yodata.io/reso/enum#GreenBuildingVerificationType"
+  },
+  "GreenEnergyEfficient": {
+   "@id": "GreenEnergyEfficient",
+   "@type": "https://yodata.io/reso/enum#GreenEnergyEfficient"
+  },
+  "GreenEnergyGeneration": {
+   "@id": "GreenEnergyGeneration",
+   "@type": "https://yodata.io/reso/enum#GreenEnergyGeneration"
+  },
+  "GreenIndoorAirQuality": {
+   "@id": "GreenIndoorAirQuality",
+   "@type": "https://yodata.io/reso/enum#GreenIndoorAirQuality"
+  },
+  "GreenLocation": "GreenLocation",
+  "GreenSustainability": {
+   "@id": "GreenSustainability",
+   "@type": "https://yodata.io/reso/enum#GreenSustainability"
+  },
+  "GreenVerification": "GreenVerification",
+  "GreenWaterConservation": {
+   "@id": "GreenWaterConservation",
+   "@type": "https://yodata.io/reso/enum#GreenWaterConservation"
+  },
+  "GrossIncome": {
+   "@id": "GrossIncome",
+   "@type": "http://www.w3.org/2001/XMLSchema#decimal"
+  },
+  "GrossScheduledIncome": {
+   "@id": "GrossScheduledIncome",
+   "@type": "http://www.w3.org/2001/XMLSchema#decimal"
+  },
+  "HabitableResidenceYN": {
+   "@id": "HabitableResidenceYN",
+   "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+  },
+  "Heating": "Heating",
+  "HeatingYN": {
+   "@id": "HeatingYN",
+   "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+  },
+  "HighSchool": "HighSchool",
+  "HighSchoolDistrict": "HighSchoolDistrict",
+  "HomeWarrantyYN": {
+   "@id": "HomeWarrantyYN",
+   "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+  },
+  "HorseAmenities": "HorseAmenities",
+  "HorseYN": {
+   "@id": "HorseYN",
+   "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+  },
+  "HoursDaysOfOperation": {
+   "@id": "HoursDaysOfOperation",
+   "@type": "https://yodata.io/reso/enum#HoursDaysOfOperation"
+  },
+  "HoursDaysofOperationDescription": "HoursDaysofOperationDescription",
+  "Inclusions": "Inclusions",
+  "IncomeIncludes": {
+   "@id": "IncomeIncludes",
+   "@type": "https://yodata.io/reso/enum#IncomeIncludes"
+  },
+  "InsuranceExpense": {
+   "@id": "InsuranceExpense",
+   "@type": "http://www.w3.org/2001/XMLSchema#decimal"
+  },
+  "InteriorFeatures": "InteriorFeatures",
+  "InternetAddressDisplayYN": {
+   "@id": "InternetAddressDisplayYN",
+   "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+  },
+  "InternetAutomatedValuationDisplayYN": {
+   "@id": "InternetAutomatedValuationDisplayYN",
+   "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+  },
+  "InternetConsumerCommentYN": {
+   "@id": "InternetConsumerCommentYN",
+   "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+  },
+  "InternetEntireListingDisplayYN": {
+   "@id": "InternetEntireListingDisplayYN",
+   "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+  },
+  "IrrigationSource": "IrrigationSource",
+  "IrrigationWaterRightsAcres": {
+   "@id": "IrrigationWaterRightsAcres",
+   "@type": "http://www.w3.org/2001/XMLSchema#decimal"
+  },
+  "IrrigationWaterRightsYN": {
+   "@id": "IrrigationWaterRightsYN",
+   "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+  },
+  "LaborInformation": "LaborInformation",
+  "LandLeaseAmount": {
+   "@id": "LandLeaseAmount",
+   "@type": "http://www.w3.org/2001/XMLSchema#decimal"
+  },
+  "LandLeaseAmountFrequency": {
+   "@id": "LandLeaseAmountFrequency",
+   "@type": "https://yodata.io/reso/enum#FeeFrequency"
+  },
+  "LandLeaseExpirationDate": {
+   "@id": "LandLeaseExpirationDate",
+   "@type": "http://www.w3.org/2001/XMLSchema#date"
+  },
+  "LandLeaseYN": {
+   "@id": "LandLeaseYN",
+   "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+  },
+  "Latitude": {
+   "@id": "Latitude",
+   "@type": "http://www.w3.org/2001/XMLSchema#decimal"
+  },
+  "LaundryFeatures": "LaundryFeatures",
+  "LeasableArea": {
+   "@id": "LeasableArea",
+   "@type": "http://www.w3.org/2001/XMLSchema#decimal"
+  },
+  "LeasableAreaUnits": {
+   "@id": "LeasableAreaUnits",
+   "@type": "https://yodata.io/reso/enum#AreaUnits"
+  },
+  "LeaseAmount": {
+   "@id": "LeaseAmount",
+   "@type": "http://www.w3.org/2001/XMLSchema#decimal"
+  },
+  "LeaseAmountFrequency": {
+   "@id": "LeaseAmountFrequency",
+   "@type": "https://yodata.io/reso/enum#FeeFrequency"
+  },
+  "LeaseAssignableYN": {
+   "@id": "LeaseAssignableYN",
+   "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+  },
+  "LeaseConsideredYN": {
+   "@id": "LeaseConsideredYN",
+   "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+  },
+  "LeaseExpiration": {
+   "@id": "LeaseExpiration",
+   "@type": "http://www.w3.org/2001/XMLSchema#date"
+  },
+  "LeaseRenewalCompensation": {
+   "@id": "LeaseRenewalCompensation",
+   "@type": "https://yodata.io/reso/enum#LeaseRenewalCompensation"
+  },
+  "LeaseRenewalOptionYN": {
+   "@id": "LeaseRenewalOptionYN",
+   "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+  },
+  "LeaseTerm": {
+   "@id": "LeaseTerm",
+   "@type": "https://yodata.io/reso/enum#LeaseTerm"
+  },
+  "Levels": {
+   "@id": "Levels",
+   "@type": "https://yodata.io/reso/enum#Levels"
+  },
+  "License1": "License1",
+  "License2": "License2",
+  "License3": "License3",
+  "LicensesExpense": {
+   "@id": "LicensesExpense",
+   "@type": "http://www.w3.org/2001/XMLSchema#decimal"
+  },
+  "ListAOR": "ListAOR",
+  "ListAgentAOR": "ListAgentAOR",
+  "ListAgentCellPhone": "ListAgentCellPhone",
+  "ListAgentDesignation": "ListAgentDesignation",
+  "ListAgentDirectPhone": "ListAgentDirectPhone",
+  "ListAgentEmail": "ListAgentEmail",
+  "ListAgentFax": "ListAgentFax",
+  "ListAgentFirstName": "ListAgentFirstName",
+  "ListAgentFullName": "ListAgentFullName",
+  "ListAgentHomePhone": "ListAgentHomePhone",
+  "ListAgentKey": "ListAgentKey",
+  "ListAgentKeyNumeric": {
+   "@id": "ListAgentKeyNumeric",
+   "@type": "http://www.w3.org/2001/XMLSchema#decimal"
+  },
+  "ListAgentLastName": "ListAgentLastName",
+  "ListAgentMiddleName": "ListAgentMiddleName",
+  "ListAgentMlsId": "ListAgentMlsId",
+  "ListAgentNamePrefix": "ListAgentNamePrefix",
+  "ListAgentNameSuffix": "ListAgentNameSuffix",
+  "ListAgentOfficePhone": "ListAgentOfficePhone",
+  "ListAgentOfficePhoneExt": "ListAgentOfficePhoneExt",
+  "ListAgentPager": "ListAgentPager",
+  "ListAgentPreferredPhone": "ListAgentPreferredPhone",
+  "ListAgentPreferredPhoneExt": "ListAgentPreferredPhoneExt",
+  "ListAgentStateLicense": "ListAgentStateLicense",
+  "ListAgentTollFreePhone": "ListAgentTollFreePhone",
+  "ListAgentURL": "ListAgentURL",
+  "ListAgentVoiceMail": "ListAgentVoiceMail",
+  "ListAgentVoiceMailExt": "ListAgentVoiceMailExt",
+  "ListOfficeAOR": "ListOfficeAOR",
+  "ListOfficeEmail": "ListOfficeEmail",
+  "ListOfficeFax": "ListOfficeFax",
+  "ListOfficeKey": "ListOfficeKey",
+  "ListOfficeKeyNumeric": {
+   "@id": "ListOfficeKeyNumeric",
+   "@type": "http://www.w3.org/2001/XMLSchema#decimal"
+  },
+  "ListOfficeMlsId": "ListOfficeMlsId",
+  "ListOfficeName": "ListOfficeName",
+  "ListOfficePhone": "ListOfficePhone",
+  "ListOfficePhoneExt": "ListOfficePhoneExt",
+  "ListOfficeURL": "ListOfficeURL",
+  "ListPrice": {
+   "@id": "ListPrice",
+   "@type": "http://www.w3.org/2001/XMLSchema#decimal"
+  },
+  "ListPriceLow": {
+   "@id": "ListPriceLow",
+   "@type": "http://www.w3.org/2001/XMLSchema#decimal"
+  },
+  "ListTeamKey": "ListTeamKey",
+  "ListTeamKeyNumeric": {
+   "@id": "ListTeamKeyNumeric",
+   "@type": "http://www.w3.org/2001/XMLSchema#decimal"
+  },
+  "ListTeamName": "ListTeamName",
+  "ListingAgreement": {
+   "@id": "ListingAgreement",
+   "@type": "https://yodata.io/reso/enum#ListingAgreement"
+  },
+  "ListingContractDate": {
+   "@id": "ListingContractDate",
+   "@type": "http://www.w3.org/2001/XMLSchema#date"
+  },
+  "ListingId": "ListingId",
+  "ListingKey": "ListingKey",
+  "ListingKeyNumeric": {
+   "@id": "ListingKeyNumeric",
+   "@type": "http://www.w3.org/2001/XMLSchema#decimal"
+  },
+  "ListingService": {
+   "@id": "ListingService",
+   "@type": "https://yodata.io/reso/enum#ListingService"
+  },
+  "ListingTerms": {
+   "@id": "ListingTerms",
+   "@type": "https://yodata.io/reso/enum#ListingTerms"
+  },
+  "LivingArea": {
+   "@id": "LivingArea",
+   "@type": "http://www.w3.org/2001/XMLSchema#decimal"
+  },
+  "LivingAreaSource": {
+   "@id": "LivingAreaSource",
+   "@type": "https://yodata.io/reso/enum#AreaSource"
+  },
+  "LivingAreaUnits": {
+   "@id": "LivingAreaUnits",
+   "@type": "https://yodata.io/reso/enum#AreaUnits"
+  },
+  "LockBoxLocation": "LockBoxLocation",
+  "LockBoxSerialNumber": "LockBoxSerialNumber",
+  "LockBoxType": {
+   "@id": "LockBoxType",
+   "@type": "https://yodata.io/reso/enum#LockBoxType"
+  },
+  "Longitude": {
+   "@id": "Longitude",
+   "@type": "http://www.w3.org/2001/XMLSchema#decimal"
+  },
+  "LotDimensionsSource": "LotDimensionsSource",
+  "LotFeatures": "LotFeatures",
+  "LotSizeAcres": {
+   "@id": "LotSizeAcres",
+   "@type": "http://www.w3.org/2001/XMLSchema#decimal"
+  },
+  "LotSizeArea": {
+   "@id": "LotSizeArea",
+   "@type": "http://www.w3.org/2001/XMLSchema#decimal"
+  },
+  "LotSizeDimensions": "LotSizeDimensions",
+  "LotSizeSource": {
+   "@id": "LotSizeSource",
+   "@type": "https://yodata.io/reso/enum#LotSizeSource"
+  },
+  "LotSizeSquareFeet": {
+   "@id": "LotSizeSquareFeet",
+   "@type": "http://www.w3.org/2001/XMLSchema#decimal"
+  },
+  "LotSizeUnits": {
+   "@id": "LotSizeUnits",
+   "@type": "https://yodata.io/reso/enum#LotSizeUnits"
+  },
+  "MLSAreaMajor": "MLSAreaMajor",
+  "MLSAreaMinor": "MLSAreaMinor",
+  "MainLevelBathrooms": {
+   "@id": "MainLevelBathrooms",
+   "@type": "http://www.w3.org/2001/XMLSchema#decimal"
+  },
+  "MainLevelBedrooms": {
+   "@id": "MainLevelBedrooms",
+   "@type": "http://www.w3.org/2001/XMLSchema#decimal"
+  },
+  "MaintenanceExpense": {
+   "@id": "MaintenanceExpense",
+   "@type": "http://www.w3.org/2001/XMLSchema#decimal"
+  },
+  "MajorChangeTimestamp": {
+   "@id": "MajorChangeTimestamp",
+   "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+  },
+  "MajorChangeType": {
+   "@id": "MajorChangeType",
+   "@type": "https://yodata.io/reso/enum#ChangeType"
+  },
+  "Make": "Make",
+  "ManagerExpense": {
+   "@id": "ManagerExpense",
+   "@type": "http://www.w3.org/2001/XMLSchema#decimal"
+  },
+  "MapCoordinate": "MapCoordinate",
+  "MapCoordinateSource": "MapCoordinateSource",
+  "MapURL": "MapURL",
+  "MiddleOrJuniorSchool": "MiddleOrJuniorSchool",
+  "MiddleOrJuniorSchoolDistrict": "MiddleOrJuniorSchoolDistrict",
+  "MlsStatus": "MlsStatus",
+  "MobileDimUnits": {
+   "@id": "MobileDimUnits",
+   "@type": "https://yodata.io/reso/enum#LinearUnits"
+  },
+  "MobileHomeRemainsYN": {
+   "@id": "MobileHomeRemainsYN",
+   "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+  },
+  "MobileLength": {
+   "@id": "MobileLength",
+   "@type": "http://www.w3.org/2001/XMLSchema#decimal"
+  },
+  "MobileWidth": {
+   "@id": "MobileWidth",
+   "@type": "http://www.w3.org/2001/XMLSchema#decimal"
+  },
+  "Model": "Model",
+  "ModificationTimestamp": {
+   "@id": "ModificationTimestamp",
+   "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+  },
+  "NetOperatingIncome": {
+   "@id": "NetOperatingIncome",
+   "@type": "http://www.w3.org/2001/XMLSchema#decimal"
+  },
+  "NewConstructionYN": {
+   "@id": "NewConstructionYN",
+   "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+  },
+  "NewTaxesExpense": {
+   "@id": "NewTaxesExpense",
+   "@type": "http://www.w3.org/2001/XMLSchema#decimal"
+  },
+  "NumberOfBuildings": {
+   "@id": "NumberOfBuildings",
+   "@type": "http://www.w3.org/2001/XMLSchema#decimal"
+  },
+  "NumberOfFullTimeEmployees": {
+   "@id": "NumberOfFullTimeEmployees",
+   "@type": "http://www.w3.org/2001/XMLSchema#decimal"
+  },
+  "NumberOfLots": {
+   "@id": "NumberOfLots",
+   "@type": "http://www.w3.org/2001/XMLSchema#decimal"
+  },
+  "NumberOfPads": {
+   "@id": "NumberOfPads",
+   "@type": "http://www.w3.org/2001/XMLSchema#decimal"
+  },
+  "NumberOfPartTimeEmployees": {
+   "@id": "NumberOfPartTimeEmployees",
+   "@type": "http://www.w3.org/2001/XMLSchema#decimal"
+  },
+  "NumberOfSeparateElectricMeters": {
+   "@id": "NumberOfSeparateElectricMeters",
+   "@type": "http://www.w3.org/2001/XMLSchema#decimal"
+  },
+  "NumberOfSeparateGasMeters": {
+   "@id": "NumberOfSeparateGasMeters",
+   "@type": "http://www.w3.org/2001/XMLSchema#decimal"
+  },
+  "NumberOfSeparateWaterMeters": {
+   "@id": "NumberOfSeparateWaterMeters",
+   "@type": "http://www.w3.org/2001/XMLSchema#decimal"
+  },
+  "NumberOfUnitsInCommunity": {
+   "@id": "NumberOfUnitsInCommunity",
+   "@type": "http://www.w3.org/2001/XMLSchema#decimal"
+  },
+  "NumberOfUnitsLeased": {
+   "@id": "NumberOfUnitsLeased",
+   "@type": "http://www.w3.org/2001/XMLSchema#decimal"
+  },
+  "NumberOfUnitsMoMo": {
+   "@id": "NumberOfUnitsMoMo",
+   "@type": "http://www.w3.org/2001/XMLSchema#decimal"
+  },
+  "NumberOfUnitsTotal": {
+   "@id": "NumberOfUnitsTotal",
+   "@type": "http://www.w3.org/2001/XMLSchema#decimal"
+  },
+  "NumberOfUnitsVacant": {
+   "@id": "NumberOfUnitsVacant",
+   "@type": "http://www.w3.org/2001/XMLSchema#decimal"
+  },
+  "OccupantName": "OccupantName",
+  "OccupantPhone": "OccupantPhone",
+  "OccupantType": {
+   "@id": "OccupantType",
+   "@type": "https://yodata.io/reso/enum#OccupantType"
+  },
+  "OffMarketDate": {
+   "@id": "OffMarketDate",
+   "@type": "http://www.w3.org/2001/XMLSchema#date"
+  },
+  "OffMarketTimestamp": {
+   "@id": "OffMarketTimestamp",
+   "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+  },
+  "OnMarketDate": {
+   "@id": "OnMarketDate",
+   "@type": "http://www.w3.org/2001/XMLSchema#date"
+  },
+  "OnMarketTimestamp": {
+   "@id": "OnMarketTimestamp",
+   "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+  },
+  "OpenParkingSpaces": {
+   "@id": "OpenParkingSpaces",
+   "@type": "http://www.w3.org/2001/XMLSchema#decimal"
+  },
+  "OpenParkingYN": {
+   "@id": "OpenParkingYN",
+   "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+  },
+  "OperatingExpense": {
+   "@id": "OperatingExpense",
+   "@type": "http://www.w3.org/2001/XMLSchema#decimal"
+  },
+  "OperatingExpenseIncludes": {
+   "@id": "OperatingExpenseIncludes",
+   "@type": "https://yodata.io/reso/enum#OperatingExpenseIncludes"
+  },
+  "OriginalEntryTimestamp": {
+   "@id": "OriginalEntryTimestamp",
+   "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+  },
+  "OriginalListPrice": {
+   "@id": "OriginalListPrice",
+   "@type": "http://www.w3.org/2001/XMLSchema#decimal"
+  },
+  "OriginatingSystemID": "OriginatingSystemID",
+  "OriginatingSystemKey": "OriginatingSystemKey",
+  "OriginatingSystemName": "OriginatingSystemName",
+  "OtherEquipment": "OtherEquipment",
+  "OtherExpense": {
+   "@id": "OtherExpense",
+   "@type": "http://www.w3.org/2001/XMLSchema#decimal"
+  },
+  "OtherParking": "OtherParking",
+  "OtherStructures": "OtherStructures",
+  "OwnerName": "OwnerName",
+  "OwnerPays": {
+   "@id": "OwnerPays",
+   "@type": "https://yodata.io/reso/enum#OwnerPays"
+  },
+  "OwnerPhone": "OwnerPhone",
+  "Ownership": "Ownership",
+  "OwnershipType": {
+   "@id": "OwnershipType",
+   "@type": "https://yodata.io/reso/enum#OwnershipType"
+  },
+  "ParcelNumber": "ParcelNumber",
+  "ParkManagerName": "ParkManagerName",
+  "ParkManagerPhone": "ParkManagerPhone",
+  "ParkName": "ParkName",
+  "ParkingFeatures": "ParkingFeatures",
+  "ParkingTotal": {
+   "@id": "ParkingTotal",
+   "@type": "http://www.w3.org/2001/XMLSchema#decimal"
+  },
+  "PastureArea": {
+   "@id": "PastureArea",
+   "@type": "http://www.w3.org/2001/XMLSchema#decimal"
+  },
+  "PatioAndPorchFeatures": "PatioAndPorchFeatures",
+  "PendingTimestamp": {
+   "@id": "PendingTimestamp",
+   "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+  },
+  "PestControlExpense": {
+   "@id": "PestControlExpense",
+   "@type": "http://www.w3.org/2001/XMLSchema#decimal"
+  },
+  "PetsAllowed": {
+   "@id": "PetsAllowed",
+   "@type": "https://yodata.io/reso/enum#PetsAllowed"
+  },
+  "PhotosChangeTimestamp": {
+   "@id": "PhotosChangeTimestamp",
+   "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+  },
+  "PhotosCount": {
+   "@id": "PhotosCount",
+   "@type": "http://www.w3.org/2001/XMLSchema#decimal"
+  },
+  "PoolExpense": {
+   "@id": "PoolExpense",
+   "@type": "http://www.w3.org/2001/XMLSchema#decimal"
+  },
+  "PoolFeatures": "PoolFeatures",
+  "PoolPrivateYN": {
+   "@id": "PoolPrivateYN",
+   "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+  },
+  "Possession": {
+   "@id": "Possession",
+   "@type": "https://yodata.io/reso/enum#Possession"
+  },
+  "PossibleUse": "PossibleUse",
+  "PostalCity": "PostalCity",
+  "PostalCode": "PostalCode",
+  "PostalCodePlus4": "PostalCodePlus4",
+  "PowerProductionType": {
+   "@id": "PowerProductionType",
+   "@type": "https://yodata.io/reso/enum#PowerProductionType"
+  },
+  "PowerProduction": {
+   "@id": "PowerProduction",
+   "@type": "http://www.w3.org/2001/XMLSchema#decimal"
+  },
+  "PreviousListPrice": {
+   "@id": "PreviousListPrice",
+   "@type": "http://www.w3.org/2001/XMLSchema#decimal"
+  },
+  "PriceChangeTimestamp": {
+   "@id": "PriceChangeTimestamp",
+   "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+  },
+  "PrivateOfficeRemarks": "PrivateOfficeRemarks",
+  "PrivateRemarks": "PrivateRemarks",
+  "ProfessionalManagementExpense": {
+   "@id": "ProfessionalManagementExpense",
+   "@type": "http://www.w3.org/2001/XMLSchema#decimal"
+  },
+  "PropertyAttachedYN": {
+   "@id": "PropertyAttachedYN",
+   "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+  },
+  "PropertyCondition": {
+   "@id": "PropertyCondition",
+   "@type": "https://yodata.io/reso/enum#PropertyCondition"
+  },
+  "PropertySubType": {
+   "@id": "PropertySubType",
+   "@type": "https://yodata.io/reso/enum#PropertySubType"
+  },
+  "PropertyType": {
+   "@id": "PropertyType",
+   "@type": "https://yodata.io/reso/enum#PropertyType"
+  },
+  "PublicRemarks": "PublicRemarks",
+  "PublicSurveyRange": "PublicSurveyRange",
+  "PublicSurveySection": "PublicSurveySection",
+  "PublicSurveyTownship": "PublicSurveyTownship",
+  "PurchaseContractDate": {
+   "@id": "PurchaseContractDate",
+   "@type": "http://www.w3.org/2001/XMLSchema#date"
+  },
+  "RVParkingDimensions": "RVParkingDimensions",
+  "RangeArea": {
+   "@id": "RangeArea",
+   "@type": "http://www.w3.org/2001/XMLSchema#decimal"
+  },
+  "RentControlYN": {
+   "@id": "RentControlYN",
+   "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+  },
+  "RentIncludes": {
+   "@id": "RentIncludes",
+   "@type": "https://yodata.io/reso/enum#RentIncludes"
+  },
+  "RoadFrontageType": "RoadFrontageType",
+  "RoadResponsibility": "RoadResponsibility",
+  "RoadSurfaceType": "RoadSurfaceType",
+  "Roof": {
+   "@id": "Roof",
+   "@type": "https://yodata.io/reso/enum#Roof"
+  },
+  "RoomType": {
+   "@id": "RoomType",
+   "@type": "https://yodata.io/reso/enum#RoomType"
+  },
+  "Room": {
+   "@id": "Room",
+   "@type": "http://www.w3.org/2001/XMLSchema#decimal"
+  },
+  "RoomsTotal": {
+   "@id": "RoomsTotal",
+   "@type": "http://www.w3.org/2001/XMLSchema#decimal"
+  },
+  "SeatingCapacity": {
+   "@id": "SeatingCapacity",
+   "@type": "http://www.w3.org/2001/XMLSchema#decimal"
+  },
+  "SecurityFeatures": "SecurityFeatures",
+  "SeniorCommunityYN": {
+   "@id": "SeniorCommunityYN",
+   "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+  },
+  "SerialU": "SerialU",
+  "SerialX": "SerialX",
+  "SerialXX": "SerialXX",
+  "Sewer": {
+   "@id": "Sewer",
+   "@type": "https://yodata.io/reso/enum#Sewer"
+  },
+  "ShowingContactName": "ShowingContactName",
+  "ShowingContactPhone": "ShowingContactPhone",
+  "ShowingContactPhoneExt": "ShowingContactPhoneExt",
+  "ShowingContactType": {
+   "@id": "ShowingContactType",
+   "@type": "https://yodata.io/reso/enum#ShowingContactType"
+  },
+  "ShowingInstructions": "ShowingInstructions",
+  "SignOnPropertyYN": {
+   "@id": "SignOnPropertyYN",
+   "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+  },
+  "Skirt": {
+   "@id": "Skirt",
+   "@type": "https://yodata.io/reso/enum#Skirt"
+  },
+  "SourceSystemID": "SourceSystemID",
+  "SourceSystemKey": "SourceSystemKey",
+  "SourceSystemName": "SourceSystemName",
+  "SpaFeatures": "SpaFeatures",
+  "SpaYN": {
+   "@id": "SpaYN",
+   "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+  },
+  "SpecialLicenses": {
+   "@id": "SpecialLicenses",
+   "@type": "https://yodata.io/reso/enum#SpecialLicenses"
+  },
+  "SpecialListingConditions": {
+   "@id": "SpecialListingConditions",
+   "@type": "https://yodata.io/reso/enum#SpecialListingConditions"
+  },
+  "StandardStatus": {
+   "@id": "StandardStatus",
+   "@type": "https://yodata.io/reso/enum#StandardStatus"
+  },
+  "StateOrProvince": {
+   "@id": "StateOrProvince",
+   "@type": "https://yodata.io/reso/enum#StateOrProvince"
+  },
+  "StateRegion": "StateRegion",
+  "StatusChangeTimestamp": {
+   "@id": "StatusChangeTimestamp",
+   "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+  },
+  "Stories": {
+   "@id": "Stories",
+   "@type": "http://www.w3.org/2001/XMLSchema#decimal"
+  },
+  "StoriesTotal": {
+   "@id": "StoriesTotal",
+   "@type": "http://www.w3.org/2001/XMLSchema#decimal"
+  },
+  "StreetAdditionalInfo": "StreetAdditionalInfo",
+  "StreetDirPrefix": {
+   "@id": "StreetDirPrefix",
+   "@type": "https://yodata.io/reso/enum#StreetDirection"
+  },
+  "StreetDirSuffix": {
+   "@id": "StreetDirSuffix",
+   "@type": "https://yodata.io/reso/enum#StreetDirection"
+  },
+  "StreetName": "StreetName",
+  "StreetNumber": "StreetNumber",
+  "StreetNumberNumeric": {
+   "@id": "StreetNumberNumeric",
+   "@type": "http://www.w3.org/2001/XMLSchema#decimal"
+  },
+  "StreetSuffix": "StreetSuffix",
+  "StreetSuffixModifier": "StreetSuffixModifier",
+  "StructureType": {
+   "@id": "StructureType",
+   "@type": "https://yodata.io/reso/enum#StructureType"
+  },
+  "SubAgencyCompensation": "SubAgencyCompensation",
+  "SubAgencyCompensationType": {
+   "@id": "SubAgencyCompensationType",
+   "@type": "https://yodata.io/reso/enum#CompensationType"
+  },
+  "SubdivisionName": "SubdivisionName",
+  "SuppliesExpense": {
+   "@id": "SuppliesExpense",
+   "@type": "http://www.w3.org/2001/XMLSchema#decimal"
+  },
+  "SyndicateTo": "SyndicateTo",
+  "SyndicationRemarks": "SyndicationRemarks",
+  "TaxAnnualAmount": {
+   "@id": "TaxAnnualAmount",
+   "@type": "http://www.w3.org/2001/XMLSchema#decimal"
+  },
+  "TaxAssessedValue": {
+   "@id": "TaxAssessedValue",
+   "@type": "http://www.w3.org/2001/XMLSchema#decimal"
+  },
+  "TaxBlock": "TaxBlock",
+  "TaxBookNumber": "TaxBookNumber",
+  "TaxExemptions": "TaxExemptions",
+  "TaxLegalDescription": "TaxLegalDescription",
+  "TaxLot": "TaxLot",
+  "TaxMapNumber": "TaxMapNumber",
+  "TaxOtherAnnualAssessmentAmount": {
+   "@id": "TaxOtherAnnualAssessmentAmount",
+   "@type": "http://www.w3.org/2001/XMLSchema#decimal"
+  },
+  "TaxParcelLetter": "TaxParcelLetter",
+  "TaxStatusCurrent": "TaxStatusCurrent",
+  "TaxTract": "TaxTract",
+  "TaxYear": {
+   "@id": "TaxYear",
+   "@type": "http://www.w3.org/2001/XMLSchema#decimal"
+  },
+  "Telephone": "Telephone",
+  "TenantPays": {
+   "@id": "TenantPays",
+   "@type": "https://yodata.io/reso/enum#TenantPays"
+  },
+  "Topography": "Topography",
+  "TotalActualRent": {
+   "@id": "TotalActualRent",
+   "@type": "http://www.w3.org/2001/XMLSchema#decimal"
+  },
+  "Township": "Township",
+  "TransactionBrokerCompensation": "TransactionBrokerCompensation",
+  "TransactionBrokerCompensationType": {
+   "@id": "TransactionBrokerCompensationType",
+   "@type": "https://yodata.io/reso/enum#CompensationType"
+  },
+  "TrashExpense": {
+   "@id": "TrashExpense",
+   "@type": "http://www.w3.org/2001/XMLSchema#decimal"
+  },
+  "UnitNumber": "UnitNumber",
+  "UnitTypeType": "UnitTypeType",
+  "UnitType": {
+   "@id": "UnitType",
+   "@type": "http://www.w3.org/2001/XMLSchema#decimal"
+  },
+  "UnitsFurnished": "UnitsFurnished",
+  "UnparsedAddress": "UnparsedAddress",
+  "Utilities": {
+   "@id": "Utilities",
+   "@type": "https://yodata.io/reso/enum#Utilities"
+  },
+  "VacancyAllowance": {
+   "@id": "VacancyAllowance",
+   "@type": "http://www.w3.org/2001/XMLSchema#decimal"
+  },
+  "VacancyAllowanceRate": {
+   "@id": "VacancyAllowanceRate",
+   "@type": "http://www.w3.org/2001/XMLSchema#decimal"
+  },
+  "Vegetation": "Vegetation",
+  "VideosChangeTimestamp": {
+   "@id": "VideosChangeTimestamp",
+   "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+  },
+  "VideosCount": {
+   "@id": "VideosCount",
+   "@type": "http://www.w3.org/2001/XMLSchema#decimal"
+  },
+  "View": "View",
+  "ViewYN": {
+   "@id": "ViewYN",
+   "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+  },
+  "VirtualTourURLBranded": "VirtualTourURLBranded",
+  "VirtualTourURLUnbranded": "VirtualTourURLUnbranded",
+  "WalkScore": {
+   "@id": "WalkScore",
+   "@type": "http://www.w3.org/2001/XMLSchema#decimal"
+  },
+  "WaterBodyName": "WaterBodyName",
+  "WaterSewerExpense": {
+   "@id": "WaterSewerExpense",
+   "@type": "http://www.w3.org/2001/XMLSchema#decimal"
+  },
+  "WaterSource": {
+   "@id": "WaterSource",
+   "@type": "https://yodata.io/reso/enum#WaterSource"
+  },
+  "WaterfrontFeatures": "WaterfrontFeatures",
+  "WaterfrontYN": {
+   "@id": "WaterfrontYN",
+   "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+  },
+  "WindowFeatures": "WindowFeatures",
+  "WithdrawnDate": {
+   "@id": "WithdrawnDate",
+   "@type": "http://www.w3.org/2001/XMLSchema#date"
+  },
+  "WoodedArea": {
+   "@id": "WoodedArea",
+   "@type": "http://www.w3.org/2001/XMLSchema#decimal"
+  },
+  "WorkmansCompensationExpense": {
+   "@id": "WorkmansCompensationExpense",
+   "@type": "http://www.w3.org/2001/XMLSchema#decimal"
+  },
+  "YearBuilt": {
+   "@id": "YearBuilt",
+   "@type": "http://www.w3.org/2001/XMLSchema#decimal"
+  },
+  "YearBuiltDetails": "YearBuiltDetails",
+  "YearBuiltEffective": {
+   "@id": "YearBuiltEffective",
+   "@type": "http://www.w3.org/2001/XMLSchema#decimal"
+  },
+  "YearBuiltSource": {
+   "@id": "YearBuiltSource",
+   "@type": "https://yodata.io/reso/enum#YearBuiltSource"
+  },
+  "YearEstablished": {
+   "@id": "YearEstablished",
+   "@type": "http://www.w3.org/2001/XMLSchema#decimal"
+  },
+  "YearsCurrentOwner": {
+   "@id": "YearsCurrentOwner",
+   "@type": "http://www.w3.org/2001/XMLSchema#decimal"
+  },
+  "Zoning": "Zoning",
+  "ZoningDescription": "ZoningDescription"
+ }
+}
